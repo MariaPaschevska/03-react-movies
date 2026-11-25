@@ -17,7 +17,7 @@ export default function App() {
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
   const closeMovieModal = () => setSelectedMovie(null);
-  
+
   const handleSearch = async (topic: string) => {
     try {
       setIsLoading(true);
